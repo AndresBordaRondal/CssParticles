@@ -41,7 +41,9 @@ body {
     animation: animate 15s ease normal;
     animation-duration: calc(125s/var(--i));
     animation-direction: alternate;
+    /* Añadido */
     animation-iteration-count: 2;
+    /* Añadido */
 }
 
 .particles span:nth-child(even) {
@@ -50,6 +52,10 @@ body {
         0 0 50px #ff2d75,
         -100px 0 #4fc3dc99,
         100px 0 #4fc3dc99;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 @keyframes animate {
@@ -62,6 +68,7 @@ body {
     }
 
     100% {
-        transform: translateY(-50vh) scale(0.5) rotate(360deg);
+        transform: translateY(-150vh) scale(0.5) rotate(360deg);
+        /* Modificado */
     }
 }

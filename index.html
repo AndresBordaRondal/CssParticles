@@ -53,6 +53,17 @@
             <span style="--i:28;"></span>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const particles = document.querySelectorAll('.particles span');
+            particles.forEach(particle => {
+                particle.addEventListener('animationend', () => {
+                    particle.classList.add('hidden');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
